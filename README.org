@@ -1,17 +1,19 @@
 #+TITLE: Portable Emacs
 
+Simple structure with scripts for incoporating a portable version of emacs
+
 * Requirements
 1. place emacs configurations in =~/.emacs.d=, make sure that any paths within configs must be relative from =HOME=
 2. Relevant SSH keys, stored in =~/.ssh=
 3. Git portable installed in  =~/Git=, with global configs configured in
 
 * Usage
-1. Place portable emacs version within a folder titled by the version.
+1. Place portable emacs version within a folder titled =~/<version number>/Emacs=
 2. Write a =~/Emacs <version number> [nodeps].bat= script, change the =emacs_version= parameter to the appropriate version
+3. Double-click on bat file to run
 
 * Optional
 - Keytweak.exe for changing CAPS into CTRL
-
 
 * Future todos
 ** TODO Script for creating all relevant emacs shortcuts in the start folder
