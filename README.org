@@ -14,6 +14,4 @@ Simple structure with scripts for incoporating a portable version of emacs
 
 * Optional
 - Keytweak.exe for changing CAPS into CTRL
-
-* Future todos
-** TODO Script for creating all relevant emacs shortcuts in the start folder
+- In order to be able to use org-roam, install =~/installers/msys64=
