@@ -5,7 +5,7 @@ Simple structure with scripts for incoporating a portable version of emacs
 * Requirements
 1. place emacs configurations in =~/.emacs.d=, make sure that any paths within configs must be relative from =HOME=
 2. Relevant SSH keys, stored in =~/.ssh=
-3. Git portable installed in  =~/Git=, with global configs configured in
+3. Git portable installed in  =~/executables/Git=, with global configs configured in
 
 * Usage
 1. Place portable emacs version within a folder titled =~/<version number>/Emacs=
@@ -14,4 +14,5 @@ Simple structure with scripts for incoporating a portable version of emacs
 
 * Optional
 - Keytweak.exe for changing CAPS into CTRL
-- In order to be able to use org-roam, install =~/installers/msys64=
+- In order to be able to use org-roam, install =~/executables/msys64=.
+  Note: msys has to be in the path before git and system32. This can be switched after installation. In particular when install python lsp server, it would require git to be before msys. When running the build script for the first time use the =~/Build Emacs nodeps.bat=

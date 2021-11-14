@@ -4,7 +4,7 @@ set emacs_version=%1
 set emacs_version=%emacs_version:"=%
 
 rem Setting env variables
-@call "%HOME%src\set_path"
+@call "%HOME%src\common\set_path"
 
 rem Running emacs
 start "" "%HOME%%emacs_version%\Emacs\bin\runemacs.exe" --debug-init

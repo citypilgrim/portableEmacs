@@ -4,7 +4,7 @@ set emacs_version=%emacs_version:"=%
 
 rem Setting env variables
 set HOME=%~dp0..\
-@call "%HOME%src\common\set_path"
+@call "%HOME%src\common\set_path_for_build"
 
 rem Temporarily installing dependencies
 @call "%HOME%src\temp_install_deps"
