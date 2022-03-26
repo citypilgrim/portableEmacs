@@ -1,18 +1,39 @@
 #+TITLE: Portable Emacs
 
-Simple structure with scripts for incoporating a portable version of emacs
+Simple structure with scripts to make  emacs portable for Windows
+
+* Structure
+The repo contains the following structure:
+#+begin_src
+  .
+  |
+  +-build
+  | +-<emacs versions for diff OS>
+  |   +-Emacs; emacs build
+  |   +-cache; cache built by emacs
+  +-cots
+  | +-Git; portable
+  | | +-<git for different OS>
+  | +-KeyTweak.exe; for windows
+  +-resource
+  +-src
+  +-.ssh
+  +-.emacs.d
+  +-main.sh; script to prompt emacs version to run
+  +-main.bat;
+
+#+end_src
 
 * Requirements
-1. place emacs configurations in =~/.emacs.d=, make sure that any paths within configs must be relative from =HOME=
-2. Relevant SSH keys, stored in =~/.ssh=
-3. Git portable installed in  =~/executables/Git=, with global configs configured in
-
+1. Download
+2. place emacs configurations in =~/.emacs.d=, make sure that any paths within configs must be relative from =HOME=
+3. Relevant SSH keys, stored in =~/.ssh=
+4. Git portable installed in  =~/cots/Git=, with global configs configured in
+5. msys64 installed in system, configured to the appropriate path i =~/.emacs.d/per-system/per-system-settings.el=
 * Usage
 1. Place portable emacs version within a folder titled =~/<version number>/Emacs=
 2. Write a =~/Emacs <version number> [nodeps].bat= script, change the =emacs_version= parameter to the appropriate version
-3. Double-click on bat file to run
-
-* Optional
+3. First run the =build_emacs.bat= script to build the ~org-roam~ sqlite database
+4. Double-click on bat file to run
+* Notes
 - Keytweak.exe for changing CAPS into CTRL
-- In order to be able to use org-roam, install =~/executables/msys64=.
-  Note: msys has to be in the path before git and system32. This can be switched after installation. In particular when install python lsp server, it would require git to be before msys. When running the build script for the first time use the =~/Build Emacs nodeps.bat=

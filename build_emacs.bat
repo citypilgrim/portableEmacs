@@ -3,4 +3,4 @@
 set /p emacs_version=Enter Emacs version:
 
 set src_dir=%~dp0src
-@call "%src_dir%"\buildemacs_nodeps.bat %emacs_version%
+@call "%src_dir%"\buildemacs.bat %emacs_version%

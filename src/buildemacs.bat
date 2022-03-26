@@ -6,8 +6,5 @@ rem Setting env variables
 set HOME=%~dp0..\
 @call "%HOME%src\common\set_path_for_build"
 
-rem Temporarily installing dependencies
-@call "%HOME%src\temp_install_deps"
-
 rem Running emacs
-start "" "%HOME%%emacs_version%\Emacs\bin\runemacs.exe" --debug-init
+start "" "%HOME%build\%emacs_version%\Emacs\bin\runemacs.exe"
