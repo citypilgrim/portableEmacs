@@ -1,6 +1,7 @@
 :: To be run after setting the HOME variable
 
 set PATH=
+set PATH=%PATH%;%HOME%bin
 set PATH=%PATH%;C:\Program Files\Common Files\Oracle\Java\javapath
 set PATH=%PATH%;%HOME%cots\Git\cmd
 set PATH=%PATH%;%HOME%cots\Git\usr\bin

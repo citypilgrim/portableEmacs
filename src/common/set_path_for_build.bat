@@ -3,6 +3,7 @@
 :: To be run after setting the HOME variable
 
 set PATH=
+set PATH=%PATH%;%HOME%bin
 set PATH=%PATH%;C:\Program Files\Common Files\Oracle\Java\javapath
 set PATH=%PATH%;C:\msys64\usr\bin
 set PATH=%PATH%;C:\msys64\mingw64\bin
